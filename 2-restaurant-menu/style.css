@@ -16,3 +16,63 @@ h1 {
     text-align: center;
     font-family: cursive;
 }
+
+ol {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 2rem;
+}
+
+ol,
+li {
+    list-style-type: none;
+}
+
+.menu {
+    background-color: rgb(222, 196, 164);
+    width: 300px;
+    padding: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menu:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+    background-color: #e8bd0d;
+}
+
+.menu h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #5a20cb;
+}
+
+.menu ul {
+    margin-top: 1rem;
+}
+
+.menu ul li {
+    font-family: cursive;
+    margin-bottom: 12px;
+}
+
+.menu-2 {
+    margin: auto;
+}
+
+.menu-3 {
+    display: inline-block;
+    margin-left: auto;
+}
+
+@media (max-width: 375px) {
+    .menu {
+        width: 200px;
+        margin: auto;
+    }
+
+    .menu ul li {
+        font-size: 14px;
+    }
+}
